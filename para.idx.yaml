@@ -9,3 +9,24 @@ provider:
         digest: sha256:04669e785fb4b5e82b2ea07451815fd3243bd3cec9a8bd089c884aee4220be26
         size: 29035677
         url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-macaddress-v0.1.2-linux_amd64
+  proxmox:
+    v0.0.0-dhcp:
+      darwin_amd64:
+        digest: sha256:89f02bcf21611cd211e79bcae3cf2cedbd01efef7e1e65c55de18d3c4ce125cb
+        size: 33155472
+        url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-proxmox-v0.0.0-dhcp-darwin_amd64
+      linux_amd64:
+        digest: sha256:94f50ee51786a00bf63db698c16b9ad4cca2718bcc3ec8332df241d87807ab07
+        size: 33542156
+        url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-proxmox-v0.0.0-dhcp-linux_amd64
+provisoner:
+  proxmox:
+    v0.0.0-dhcp:
+      darwin_amd64:
+        digest: sha256:001fe1289aecc9a3536fbce59149dc605eb36a4ff84be3da4d2e3b24abb83f7c
+        size: 31976048
+        url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provisoner-proxmox-v0.0.0-dhcp-darwin_amd64
+      linux_amd64:
+        digest: sha256:f83e31826e77d2c9bcc99cfa1098e25096b2b59c845a01a3008424c809a020ab
+        size: 32351896
+        url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provisoner-proxmox-v0.0.0-dhcp-linux_amd64
