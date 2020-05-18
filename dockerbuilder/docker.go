@@ -58,8 +58,8 @@ func (d *GoDockerContainer) init(goVersion string) error {
 
 	log.Println("----> Creating container")
 	resp, err := d.client.ContainerCreate(d.ctx, &container.Config{
-		Image: "golang",
-		Cmd:   []string{"sleep", "200"},
+		Image: image,
+		Cmd:   []string{"sleep", "500"},
 		Tty:   true,
 	}, nil, nil, "")
 
