@@ -46,7 +46,10 @@ func NewRegistry(githubConfig githubutils.GithubRegistryConfig) (*Registry, erro
 	d.formulae = formulae
 
 	log.Printf("====> Validating artifacts")
-	d.buildMissing()
+	err = d.buildMissing()
+	if err != nil {
+		return nil, err
+	}
 
 	log.Printf("====> Building index")
 	index, err := d.buildIndexYaml()
