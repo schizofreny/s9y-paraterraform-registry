@@ -1,0 +1,22 @@
+versions:
+  - name: v0.0.0-dhcp
+    git: https://github.com/lausser/terraform-provider-proxmox.git
+    ref: 6f18617af586319a073f4c4d6b5206d9c4068158
+    artifacts:
+      - type: provider
+        path: out/darwin/terraform-provider-proxmox 
+        arch: darwin_amd64
+      - type: provisoner
+        path: out/darwin/terraform-provisioner-proxmox
+        arch: darwin_amd64
+      - type: provider
+        path: out/linux/terraform-provider-proxmox 
+        arch: linux_amd64
+      - type: provisoner
+        path: out/linux/terraform-provisioner-proxmox
+        arch: linux_amd64
+
+    script:
+      - mkdir -p out/linux out/darwin
+      - CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o out/darwin -a -ldflags '-extldflags "-static"' ./...
+      - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o out/linux -a -ldflags '-extldflags "-static"' ./...
