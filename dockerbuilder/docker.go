@@ -76,7 +76,7 @@ func (d *GoDockerContainer) init(goVersion string) error {
 // Kill kills current container
 func (d *GoDockerContainer) Kill() {
 	if d.containerID != "" {
-		d.client.ContainerKill(d.ctx, d.containerID, "SIGKILL")
+		// d.client.ContainerKill(d.ctx, d.containerID, "SIGKILL")
 	}
 }
 
