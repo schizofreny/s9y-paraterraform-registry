@@ -1,0 +1,10 @@
+language: go
+go:
+- '1.13'
+env:
+  global:
+    - secure: STIopKSTZBooCzX1rHleGfiF6yQwoVakRg9syaPOpPmjSTB3wWxRmO5G1nG2E0nKb8AjPvSwXrhrUg91wHA9pKNumlf9ds/QVoIKl3zYm63Vdhlwj1YRQQo6qHZHkS47gM4x5wV2IRqzV600UhZ4GDTzxozcq7t50TFnYw7jrqbX7WWY3jC7wxBD4e4smRr2Y0tU56cfjwQljq4KlFZSbkXcflzX0bdi/yF7gN+awqjGGpWkGA2M2Ojrkr4M/pltkf+DgRSc3gs5BQOqkvqqi6ORDkJsFAGnV4JXBHwwe/6wD6SuwOv5HKXmwqt2xOGHPXZpn0DGYyzctaenD9ODJTuB8agPjzTYXB8DhR3h4imrsJxiUPJ9EM4XxlutmQ1UvUt6MjfU6DQAC19yoYKi+3ZpLQzIblrZDVbEoNs4u96fhwpM4RDP1rmauHb8NlKiCmWIU14NG7WmZf0WAmVJ6naV40xfK5BjvoMGBWaLCp7DocI7bmdnfTAn8g4d8uvVS1Q5WSfjEjVMy9n6+aszyZBaQT1iJcgraUBBLabYQ3ulLxckzRWYSIJwtCwOedi1WgschWO/LwezEzimUSLdZAJrcStio7QfQ2NIfsMIYs0FDpnoc5eVrhuBuTRcEhcXHB4aq+SMfTcQ1p3aTwkvzsegUImoDQgBccDMuGXMR3o=
+    - GITHUB_ORGANIZATION="schizofreny"
+    - GITHUB_PROJECT="s9y-paraterraform-registry"
+script:
+  - go run .
