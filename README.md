@@ -1,4 +1,5 @@
 # s9y-paraterraform-registry
+[![Build Status](https://travis-ci.org/schizofreny/s9y-paraterraform-registry.svg?branch=master)](https://travis-ci.org/schizofreny/s9y-paraterraform-registry)
 - automagically builds terraform providers from git
 - publishes build as github artifact
 - generate para.idx.yaml for https://github.com/paraterraform/para
