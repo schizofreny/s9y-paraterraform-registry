@@ -181,10 +181,20 @@ func (r *Registry) buildMissing() error {
 
 			defer container.Kill()
 
-			container.Exec([]string{"git", "clone", v.Git, dockerWorkDir}, "")
-			container.Exec([]string{"git", "checkout", v.Ref}, "")
+			err = container.Exec([]string{"git", "clone", v.Git, dockerWorkDir}, "")
+			if err != nil {
+				return err
+			}
 
-			container.ExecShellScriptLines(v.Script, dockerWorkDir)
+			err = container.Exec([]string{"git", "checkout", v.Ref}, "")
+			if err != nil {
+				return err
+			}
+
+			err = container.ExecShellScriptLines(v.Script, dockerWorkDir)
+			if err != nil {
+				return err
+			}
 
 			tmpdir, err := ioutil.TempDir("", f.Name)
 			defer os.RemoveAll(tmpdir)
