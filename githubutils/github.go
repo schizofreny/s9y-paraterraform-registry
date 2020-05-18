@@ -91,7 +91,7 @@ func (c *GithubRegistry) UploadFileToGit(path string, content []byte) error {
 		shasm = *fileContent.SHA
 	}
 
-	message := "Update para.idx.yaml"
+	message := "[skip travis] Update para.idx.yaml"
 	_, _, err = c.client.Repositories.UpdateFile(c.ctx, c.config.Organization, c.config.Repository, path, &github.RepositoryContentFileOptions{
 		Content: content,
 		Message: &message,

@@ -75,8 +75,9 @@ func (d *GoDockerContainer) init(goVersion string) error {
 
 // Kill kills current container
 func (d *GoDockerContainer) Kill() {
-
-	d.client.ContainerKill(d.ctx, d.containerID, "SIGKILL")
+	if d.containerID != "" {
+		d.client.ContainerKill(d.ctx, d.containerID, "SIGKILL")
+	}
 }
 
 // Exec exec command in workdir
