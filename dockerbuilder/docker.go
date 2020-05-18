@@ -52,10 +52,11 @@ func (d *GoDockerContainer) init(goVersion string) error {
 
 	reader, err := d.client.ImagePull(d.ctx, image, types.ImagePullOptions{})
 	if err != nil {
-		panic(err)
+		return err
 	}
 	io.Copy(os.Stdout, reader)
 
+	log.Println("----> Creating container")
 	resp, err := d.client.ContainerCreate(d.ctx, &container.Config{
 		Image: "golang",
 		Cmd:   []string{"sleep", "200"},
@@ -67,6 +68,8 @@ func (d *GoDockerContainer) init(goVersion string) error {
 	}
 
 	d.containerID = resp.ID
+
+	log.Println("----> Starting container")
 
 	err = d.client.ContainerStart(d.ctx, d.containerID, types.ContainerStartOptions{})
 	return err
