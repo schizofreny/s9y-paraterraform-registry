@@ -8,3 +8,6 @@ env:
     - GITHUB_PROJECT="s9y-paraterraform-registry"
 script:
   - go run .
+ignore:
+  - "*.md"
+  - "para.idx.yaml"
