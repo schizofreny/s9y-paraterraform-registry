@@ -1,1 +1,11 @@
-{"provider":{"macaddress":{"v0.1.2":{"darwin_amd64":{"digest":"sha256:ccf60a648f206ebe65665c408d916cb4dd7b846d6ed7c5d2231678333a316526","size":28706960,"url":"https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-macaddress-v0.1.2-darwin_amd64"},"linux_amd64":{"digest":"sha256:04669e785fb4b5e82b2ea07451815fd3243bd3cec9a8bd089c884aee4220be26","size":29035677,"url":"https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-macaddress-v0.1.2-linux_amd64"}}}}}
+provider:
+  macaddress:
+    v0.1.2:
+      darwin_amd64:
+        digest: sha256:ccf60a648f206ebe65665c408d916cb4dd7b846d6ed7c5d2231678333a316526
+        size: 28706960
+        url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-macaddress-v0.1.2-darwin_amd64
+      linux_amd64:
+        digest: sha256:04669e785fb4b5e82b2ea07451815fd3243bd3cec9a8bd089c884aee4220be26
+        size: 29035677
+        url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-macaddress-v0.1.2-linux_amd64
