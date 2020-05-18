@@ -2,8 +2,8 @@ provider:
   macaddress:
     v0.1.2:
       darwin_amd64:
-        digest: sha256:15b2f864bf10668b04427478f19c7d054d89511b6c078c07e40de4fd10037ffd
-        size: 28706960
+        digest: sha256:0204dbfe35e59f504546370d597387bca57213f2a48c62218a551ba9e345ef03
+        size: 30276992
         url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-macaddress-v0.1.2-darwin_amd64
       linux_amd64:
         digest: sha256:81bdbc3b51eea5d079eb3979f31208ec2a31de78c714ba1c06b1a2099c25706b
