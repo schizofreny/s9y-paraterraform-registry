@@ -174,11 +174,12 @@ func (r *Registry) buildMissing() error {
 			log.Printf("====> Missing artifacts %v", missingArtifacts)
 
 			container, err := dockerbuilder.NewGoDockerContainer(f.Goversion)
-			defer container.Kill()
 
 			if err != nil {
 				return err
 			}
+
+			defer container.Kill()
 
 			container.Exec([]string{"git", "clone", v.Git, dockerWorkDir}, "")
 			container.Exec([]string{"git", "checkout", v.Ref}, "")
