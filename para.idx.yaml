@@ -10,6 +10,15 @@ provider:
         size: 29035677
         url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-macaddress-v0.1.2-linux_amd64
   proxmox:
+    v0.0.0-2020_06_04:
+      darwin_amd64:
+        digest: sha256:017ce55b3f2566a2151ce1ccae42841368df1afcc27ca0610612bac4ba188a99
+        size: 33155504
+        url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-proxmox-v0.0.0-2020_06_04-darwin_amd64
+      linux_amd64:
+        digest: sha256:1a1ff30259bdd9fdcd6c4a15acf8b11b2ffdf27124c11e9452fb2280b2cb0322
+        size: 33529920
+        url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-proxmox-v0.0.0-2020_06_04-linux_amd64
     v0.0.0-dhcp:
       darwin_amd64:
         digest: sha256:80f20c514536734488cfdc83a05b8697abd8418424fcc7ed6c5cf77586689cd3
@@ -30,6 +39,15 @@ provider:
         url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provider-proxmox-v0.0.0-dhcp25-linux_amd64
 provisoner:
   proxmox:
+    v0.0.0-2020_06_04:
+      darwin_amd64:
+        digest: sha256:1d580bb9b786e2b3af4350f1909b36fe0791f4873c08ae4bc456ccfc887056cc
+        size: 31976080
+        url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provisoner-proxmox-v0.0.0-2020_06_04-darwin_amd64
+      linux_amd64:
+        digest: sha256:2203943e0cea2235e0c6743d556bf67fa3ec939c882683d60fd52b90801f9e58
+        size: 32343756
+        url: https://github.com/schizofreny/s9y-paraterraform-registry/releases/download/binaries/terraform-provisoner-proxmox-v0.0.0-2020_06_04-linux_amd64
     v0.0.0-dhcp:
       darwin_amd64:
         digest: sha256:4f915e43ac2e895119da90f866364487e356f67a3a970fcf44552ba46b0fc4df
